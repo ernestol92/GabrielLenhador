@@ -141,6 +141,29 @@ ul {
 
 .nav-logo {
     z-index: 1001;
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.nav-brand-text {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-silver);
+    transition: var(--transition-normal);
+    white-space: nowrap;
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .nav-brand-text {
+        display: block;
+    }
+}
+
+.nav-logo:hover .nav-brand-text {
+    color: var(--color-white);
 }
 
 .nav-actions {
@@ -820,23 +843,87 @@ ul {
 }
 
 /* ============================================
-   CERTIFICATES SECTION
+   PRICES SECTION
    ============================================ */
-.certificates {
+.prices {
     background: var(--color-black-light);
 }
 
-.certificates-grid {
-    display: grid;
-    gap: var(--space-lg);
-    justify-items: center;
+.prices-card {
+    max-width: 500px;
+    margin: 0 auto;
+    background: var(--color-black);
+    border: 2px solid var(--color-black-lighter);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.prices-list {
+    padding: var(--space-md);
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--color-black-lighter);
+    transition: var(--transition-fast);
+}
+
+.price-item:last-child {
+    border-bottom: none;
+}
+
+.price-item:hover {
+    background: rgba(196, 30, 58, 0.05);
+}
+
+
+.price-service {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.price-service svg {
+    width: 24px;
+    height: 24px;
+    color: var(--color-red);
+    flex-shrink: 0;
+}
+
+.price-service span {
+    font-size: 1.05rem;
+    color: var(--color-silver);
+    font-weight: 500;
+}
+
+.price-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-white);
+    background: linear-gradient(135deg, var(--color-red), var(--color-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* ============================================
+   CERTIFICATES SECTION
+   ============================================ */
+.certificates {
+    background: var(--color-black);
+}
+
+.certificate-display {
+    display: flex;
+    justify-content: center;
 }
 
 .certificate-frame {
     position: relative;
-    width: 100%;
-    max-width: 280px;
-    aspect-ratio: 4/3;
     background: var(--color-black);
     border: 3px solid;
     border-image: linear-gradient(135deg, #a8a8a8, #e0e0e0, #a8a8a8) 1;
@@ -844,44 +931,21 @@ ul {
     transition: var(--transition-normal);
 }
 
+.certificate-frame.single {
+    max-width: 400px;
+    width: 100%;
+}
+
 .certificate-frame:hover {
     transform: scale(1.02);
     box-shadow: 0 0 30px rgba(192, 192, 192, 0.3);
 }
 
-.frame-inner {
+.certificate-img {
     width: 100%;
-    height: 100%;
-    border: 1px dashed var(--color-silver-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.certificate-placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-sm);
-    color: var(--color-silver-dark);
-}
-
-.placeholder-icon {
-    width: 48px;
-    height: 48px;
-    opacity: 0.5;
-}
-
-.placeholder-text {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--color-silver);
-}
-
-.placeholder-subtext {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-sm);
 }
 
 .frame-corner {
@@ -1450,6 +1514,14 @@ body.light-mode .hours-item:hover {
     background: rgba(0, 0, 0, 0.02);
 }
 
+body.light-mode .prices-card {
+    background: #ffffff;
+}
+
+body.light-mode .price-item:hover {
+    background: rgba(196, 30, 58, 0.05);
+}
+
 body.light-mode .barber-pole {
     opacity: 0.5;
 }
@@ -1460,5 +1532,13 @@ body.light-mode .logo-dark {
 
 body.light-mode .logo-light {
     display: block;
+}
+
+body.light-mode .nav-brand-text {
+    color: var(--color-gray);
+}
+
+body.light-mode .nav-logo:hover .nav-brand-text {
+    color: var(--color-black);
 }
 
