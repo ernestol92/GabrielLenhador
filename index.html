@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barbearia Lenhador - A melhor barbearia da região. Cortes masculinos profissionais, barba e tratamentos. Agende seu horário!">
+    <meta name="keywords" content="barbearia, corte de cabelo, barba, Lenhador, barbeiro, corte masculino, Alagoas">
+    <meta name="author" content="Barbearia Lenhador">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Barbearia Lenhador - Estilo e Tradição">
+    <meta property="og:description" content="A melhor barbearia da região. Cortes masculinos profissionais, barba e tratamentos.">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <title>Barbearia Lenhador | Cortes Masculinos Profissionais</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.png" alt="Barbearia Lenhador" class="logo-image logo-dark">
+                <img src="images/inverted.png" alt="Barbearia Lenhador" class="logo-image logo-light">
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#horarios" class="nav-link">Horários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#certificados" class="nav-link">Certificados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#localizacao" class="nav-link">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                
+                <button class="nav-close" id="nav-close">
+                    <span class="close-icon">✕</span>
+                </button>
+            </div>
+            
+            <div class="nav-actions">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+                    <svg class="theme-icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="theme-icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                
+                <button class="nav-toggle" id="nav-toggle">
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <div class="barber-pole">
+                    <div class="pole-stripes"></div>
+                </div>
+            </div>
+            <div class="hero-content container">
+                <div class="hero-badge">Tradição & Estilo</div>
+                <h1 class="hero-title">
+                    <span class="title-line">BARBEARIA</span>
+                    <span class="title-accent">LENHADOR</span>
+                </h1>
+                <p class="hero-subtitle">Cortes masculinos de excelência com a tradição que você merece</p>
+                <div class="hero-cta">
+                    <a href="https://wa.me/5582991238175?text=Olá! Gostaria de agendar um horário." class="btn btn-primary" target="_blank" rel="noopener">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Agendar Horário
+                    </a>
+                </div>
+                <div class="hero-scroll">
+                    <span>Role para descobrir</span>
+                    <div class="scroll-indicator"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Quem Somos</span>
+                    <h2 class="section-title">Tradição em Cada Corte</h2>
+                    <div class="title-decoration">
+                        <span class="deco-line"></span>
+                        <span class="deco-icon">✂</span>
+                        <span class="deco-line"></span>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24A2.5 2.5 0 0 1 9.5 2"/>
+                                <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24A2.5 2.5 0 0 0 14.5 2"/>
+                            </svg>
+                        </div>
+                        <h3>Serviços</h3>
+                        <p>Corte, barba, pigmentação, sobrancelha e tratamentos capilares completos.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Qualidade</h3>
+                        <p>Utilizamos apenas produtos de primeira linha para garantir o melhor resultado.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3>Atendimento</h3>
+                        <p>Ambiente acolhedor e atendimento personalizado para cada cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hours Section -->
+        <section class="section hours" id="horarios">
+            <div class="hours-bg"></div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Funcionamento</span>
+                    <h2 class="section-title">Horário de Atendimento</h2>
+                    <div class="title-decoration">
+                        <span class="deco-line"></span>
+                        <span class="deco-icon">🕐</span>
+                        <span class="deco-line"></span>
+                    </div>
+                </div>
+                
+                <div class="hours-card">
+                    <div class="hours-header">
+                        <div class="barber-pole-mini">
+                            <div class="pole-stripes-mini"></div>
+                        </div>
+                        <span>Agenda Semanal</span>
+                        <div class="barber-pole-mini">
+                            <div class="pole-stripes-mini"></div>
+                        </div>
+                    </div>
+                    
+                    <ul class="hours-list">
+                        <li class="hours-item closed">
+                            <span class="day">Segunda-feira</span>
+                            <span class="time">Fechado</span>
+                        </li>
+                        <li class="hours-item">
+                            <span class="day">Terça-feira</span>
+                            <span class="time">09:00 - 19:00</span>
+                        </li>
+                        <li class="hours-item">
+                            <span class="day">Quarta-feira</span>
+                            <span class="time">09:00 - 19:00</span>
+                        </li>
+                        <li class="hours-item">
+                            <span class="day">Quinta-feira</span>
+                            <span class="time">09:00 - 17:00</span>
+                        </li>
+                        <li class="hours-item">
+                            <span class="day">Sexta-feira</span>
+                            <span class="time">09:00 - 19:00</span>
+                        </li>
+                        <li class="hours-item">
+                            <span class="day">Sábado</span>
+                            <span class="time">09:00 - 17:00</span>
+                        </li>
+                        <li class="hours-item closed">
+                            <span class="day">Domingo</span>
+                            <span class="time">Fechado</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="hours-footer">
+                        <p>* Recomendamos agendamento prévio</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="section certificates" id="certificados">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Credenciais</span>
+                    <h2 class="section-title">Certificados & Diplomas</h2>
+                    <div class="title-decoration">
+                        <span class="deco-line"></span>
+                        <span class="deco-icon">🏆</span>
+                        <span class="deco-line"></span>
+                    </div>
+                </div>
+                
+                <div class="certificates-grid">
+                    <div class="certificate-frame">
+                        <div class="frame-inner">
+                            <div class="certificate-placeholder">
+                                <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M9 14l2 2 4-4"/>
+                                    <path d="M12 3v3M3 12h3M21 12h-3M12 21v-3"/>
+                                </svg>
+                                <span class="placeholder-text">Certificado</span>
+                                <span class="placeholder-subtext">Em breve</span>
+                            </div>
+                        </div>
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                    </div>
+                    
+                    <div class="certificate-frame">
+                        <div class="frame-inner">
+                            <div class="certificate-placeholder">
+                                <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M9 14l2 2 4-4"/>
+                                    <path d="M12 3v3M3 12h3M21 12h-3M12 21v-3"/>
+                                </svg>
+                                <span class="placeholder-text">Diploma</span>
+                                <span class="placeholder-subtext">Em breve</span>
+                            </div>
+                        </div>
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                    </div>
+                    
+                    <div class="certificate-frame">
+                        <div class="frame-inner">
+                            <div class="certificate-placeholder">
+                                <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M9 14l2 2 4-4"/>
+                                    <path d="M12 3v3M3 12h3M21 12h-3M12 21v-3"/>
+                                </svg>
+                                <span class="placeholder-text">Certificação</span>
+                                <span class="placeholder-subtext">Em breve</span>
+                            </div>
+                        </div>
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                    </div>
+                </div>
+                
+                <p class="certificates-note">Profissional certificado e em constante atualização</p>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="section location" id="localizacao">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Onde Estamos</span>
+                    <h2 class="section-title">Nossa Localização</h2>
+                    <div class="title-decoration">
+                        <span class="deco-line"></span>
+                        <span class="deco-icon">📍</span>
+                        <span class="deco-line"></span>
+                    </div>
+                    <p class="location-address">Clima Bom, Santana do Ipanema - AL</p>
+                </div>
+                
+                <div class="map-wrapper">
+                    <div class="map-frame">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d246.03921594125498!2d-37.262456750721476!3d-9.36619660853564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sbr!4v1764879747336!5m2!1ssv!2sbr" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização da Barbearia Lenhador">
+                        </iframe>
+                    </div>
+                    
+                    <a href="https://maps.google.com/?q=-9.36619660853564,-37.262456750721476" 
+                       class="btn btn-secondary map-btn" 
+                       target="_blank" 
+                       rel="noopener">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Abrir no Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Fale Conosco</span>
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <div class="title-decoration">
+                        <span class="deco-line"></span>
+                        <span class="deco-icon">💬</span>
+                        <span class="deco-line"></span>
+                    </div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-card main-contact">
+                        <div class="contact-icon whatsapp-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Agende seu horário de forma rápida e prática</p>
+                        <a href="https://wa.me/5582991238175?text=Olá! Gostaria de agendar um horário na Barbearia Lenhador." 
+                           class="btn btn-whatsapp" 
+                           target="_blank" 
+                           rel="noopener">
+                            Chamar no WhatsApp
+                        </a>
+                        <span class="contact-number">+55 (82) 99123-8175</span>
+                    </div>
+                    
+                    <div class="contact-links">
+                        <a href="https://www.instagram.com/barbearialenhador2080" 
+                           class="contact-link instagram" 
+                           target="_blank" 
+                           rel="noopener"
+                           aria-label="Instagram da Barbearia Lenhador">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                            <span>@barbearialenhador2080</span>
+                        </a>
+                        
+                        <a href="https://wa.me/5582991238175" 
+                           class="contact-link whatsapp" 
+                           target="_blank" 
+                           rel="noopener"
+                           aria-label="WhatsApp da Barbearia Lenhador">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            <span>+55 (82) 99123-8175</span>
+                        </a>
+                        
+                        <a href="https://maps.google.com/?q=-9.36619660853564,-37.262456750721476" 
+                           class="contact-link location" 
+                           target="_blank" 
+                           rel="noopener"
+                           aria-label="Localização da Barbearia Lenhador">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Ver no Mapa</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Barbearia Lenhador" class="footer-logo-img logo-dark">
+                        <img src="images/inverted.png" alt="Barbearia Lenhador" class="footer-logo-img logo-light">
+                    </div>
+                    <p>Tradição e estilo em cada corte</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/barbearialenhador2080" 
+                       target="_blank" 
+                       rel="noopener" 
+                       class="social-link"
+                       aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/5582991238175" 
+                       target="_blank" 
+                       rel="noopener" 
+                       class="social-link"
+                       aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Barbearia Lenhador. Desenvolvido por <strong>SUBMAX</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5582991238175?text=Olá! Gostaria de agendar um horário." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener"
+       aria-label="Contato via WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
